@@ -1,0 +1,34 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+ 
+}
+
+.btn-grid {
+    display: grid;
+    gap:10px;
+}
+
+#start-btn {
+    margin: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+#timer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#highscore {
+    display: flex;
+    justify-content: flex-start;
+}

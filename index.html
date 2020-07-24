@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="highscore">View Highscore</div>
+        <div id="timer">Time:75</div>
+        
+    </div>
+
+    <div class="container">
+        <div id="question-container" class="card">
+            <div id="welcome" class="card-title"> Welcome to Code Quiz </div>
+            <div id= "the-questions" class ="card-body hide">
+            <div id="question" class="card-title"> Question </div>
+            <div id="answer-buttons" class="btn-grid">
+                <button type="button" class="btn btn-primary">Answer 1</button>
+                <button type="button" class="btn btn-primary">Answer 2</button>
+                <button type="button" class="btn btn-primary">Answer 3</button>
+                <button type="button" class="btn btn-primary">Answer 4</button>
+            </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" type="button" class="start-btn btn btn-primary">Start</button>
+                <!-- <button id="next-btn" type="button" class="next-btn btn btn-primary hide">Next</button> -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
