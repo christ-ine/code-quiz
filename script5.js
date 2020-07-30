@@ -2,9 +2,9 @@ var timer = 75;
 const answerButtonEl = document.getElementById('answer-button-group');
 
 const content = 
-        {   question:'What is this?',
-            answers: [ '11121', '2222', '43434', '56565'],
-            correct: "2222"    
+        {   question:'What tag is required to insert Javascript code into an html document ?',
+            answers: [ '<header>', "<javascript>", "<script>", "<title>"],
+            correct: "<script>"    
             
         }
 
@@ -46,7 +46,7 @@ function compare(event) {
 
     var $message = $('<div>');
     $message.addClass('card-footer text-muted');
-    $('div#august').html("correct");
+    
         
         if (element.innerText === content.correct) {
             console.log("correct")
