@@ -49,11 +49,7 @@
 
             if (userAnswer === currentQuestion.correctAnswer) {
                 numCorrect++;
-
-                answerContainers[questionNumber].style.color = 'lightgreen';
-            } else {
-                answerContainers[questionNumber].style.color = 'red';
-            }
+            } 
         });
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 
@@ -95,29 +91,47 @@
 
     const myQuestions = [
         {
-            question: "What is the best dog breed?",
+            question: "What method adds a new element to the end of an array?",
             answers: {
-                a: "Poodle",
-                b: "Beagle",
-                c: "Pitbull"
-            },
-            correctAnswer: "a"
-        },
-        {
-            question: "What is the water brand",
-            answers: {
-                a: "Dasani",
-                b: "Aquafina",
-                c: "Kroger"
+                a: "add()",
+                b: "push()",
+                c: "concat()"
             },
             correctAnswer: "b"
         },
         {
-            question: "What is the best phone brand",
+            question: "Fill in the blank: Bootstrap is a type of _________ used for faster and easier web development",
             answers: {
-                a: "Windows",
-                b: "Samsung",
-                c: "Apple"
+                a: "framework",
+                b: "element",
+                c: "selector"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "Fill in the blanks: The CSS box model consists of ______, ______, ________, and _______.",
+            answers: {
+                a: "media queries, styling, metadata, links",
+                b: "html, javascript, python, sql",
+                c: "margins, borders, padding, and actual content"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "True or false: Text between /* and */ will be ignored by javascript.",
+            answers: {
+                a: "True",
+                b: "False",
+                c: "Neither: it will return an error"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "How can I return a random number between 0 and 1?",
+            answers: {
+                a: "randomizer()",
+                b: "Math.randomizer()",
+                c: "Math.random()"
             },
             correctAnswer: "c"
         }
