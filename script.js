@@ -1,6 +1,6 @@
 function buildQuiz() {
 
-    const output= [];
+    const output = [];
 
     myQuestions.forEach((currentQuestion, questionNumber) => {
 
@@ -32,15 +32,29 @@ function buildQuiz() {
 
 };
 
-function showResults(){
+function showResults() {
 
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
     let numCorrect = 0;
 
     myQuestions.forEach((currentQuestion, questionNumber) => {
-        const answerConstainer = answerContainers
+        const answerContainer = answerContainers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+        if (userAnswer === currentQuestion.correctAnswer) {
+            numCorrect++
+
+            answerContainers[questionNumber].getElementsByClassName.color = 'lightgreen';
+        } else {
+            answerContainers[questionNumber].getElementsByClassName.color = 'red';
+        }
+
     })
+
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
 
 };
 
